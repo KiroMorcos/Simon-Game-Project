@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>Simon Game</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Css Link-->
+    <link rel="stylesheet" href="./styles.css" />
+    <!--Fonts Links-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1 id="level-title">Press A Key to Start.</h1>
+    <div class="container">
+      <div class="row">
+        <audio id="myAudio">
+          <source
+            src="https://res.cloudinary.com/de5pzy8r2/video/upload/v1616733333/Alert_irjfut.mp3"
+            type="audio/mpeg"
+          />
+        </audio>
+        <div type="button" id="green" class="green btn"></div>
+        <div type="button" id="red" class="red btn"></div>
+      </div>
+
+      <div class="row">
+        <div type="button" id="yellow" class="yellow btn"></div>
+        <div type="button" id="blue" class="blue btn"></div>
+      </div>
+    </div>
+
+    <!--Scripts Links-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./game.js" charset="utf-8"></script>
+  </body>
+</html>
